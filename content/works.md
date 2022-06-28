@@ -1,7 +1,7 @@
 ---
 title: "Works"
 date: 2022-06-24T17:00:22+02:00
-draft: true
+draft: false
 ---
 I've done many projects during my career. In this page keep here an up to date list of what I've worked on.
 

@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2022-06-24T17:00:28+02:00
-draft: true
+draft: false
 ---
 
 ### Contacts
