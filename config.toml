@@ -1,0 +1,39 @@
+baseURL = 'https://pablosproject.com'
+languageCode = 'en-us'
+title = 'Paolo Tagliani'
+theme = "researcher"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
+enableEmoji = true
+math = false          # enable KaTeX (https://katex.org/) globally
+googleAnalytics = ""  # add your tracking id
+
+[params]
+  author = "Paolo Tagliani"
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  logo = ""  # url or path to a logo to put in the header
+  
+  [params.style]  # appearance options (can be omitted)
+    fontFamily = "Inconsolata"
+    pageWidth = "750px"
+    avatarSize = "90px"
+    colorBlack = "#000000"
+    colorRed = "#dc3545"
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+  [[menu.main]]
+    name = "Works"
+    url = "/works"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
