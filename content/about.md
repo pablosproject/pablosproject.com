@@ -6,11 +6,11 @@ draft: false
 
 # About Me
 
-I am a Senior Freelance Software Engineer with strong theoretical skills and a passion for Open Source software.
+I am a Senior Software Engineer with strong theoretical skills and a passion for Open Source software.
 
 <br/>
 
-I worked for 10+ years as an iOS developer (and I still do mobile apps). Nowadays I am doing a bunch of stuff, mainly FullStack (NestJS + Angular is my preferred stack) and some Linux programming.
+I worked for 10+ years as an iOS developer (and I still do mobile apps). Nowadays I am doing a bunch of stuff, mainly FullStack (NestJS + Angular is my preferred stack) Linux programming and automations.
 
 <br/>
 
@@ -20,8 +20,6 @@ We organized several conferences on iOS and MacOS in Italy.
 
 <br/>
 
-Today I'm mostly freelancing and always looking for new challenges.
+Today I'm working with startups and always looking for new challenges.
 
 You can find me on the internet as `@pablosproject`.
-
-
