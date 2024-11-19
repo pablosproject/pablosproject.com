@@ -10,7 +10,6 @@ googleAnalytics = ""  # add your tracking id
 [params]
   author = "Paolo Tagliani"
   favicon = "favicon.ico"  # path to a .ico to use as favicon
-  logo = ""  # url or path to a logo to put in the header
   
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
@@ -25,7 +24,7 @@ googleAnalytics = ""  # add your tracking id
 [menu]
   [[menu.main]]
     name = "About"
-    url = "/about"
+    url = "/"
     weight = 1
   [[menu.main]]
     name = "Works"
