@@ -9,7 +9,7 @@ googleAnalytics = ""  # add your tracking id
 
 [params]
   author = "Paolo Tagliani"
-  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  favicon = "favicon.svg"  # path to favicon
   
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
