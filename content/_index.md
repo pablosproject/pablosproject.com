@@ -19,7 +19,7 @@ I work with companies of all sizes—startups, scaleups, and established organiz
 ---
 
 <p style="text-align: center;">
-<a href="https://github.com/pablosproject"><i class="fab fa-github"></i> GitHub</a> ·
-<a href="https://www.linkedin.com/in/paolo-tagliani/"><i class="fab fa-linkedin"></i> LinkedIn</a> ·
-<a href="https://twitter.com/pablosproject"><i class="fab fa-twitter"></i> Twitter</a>
+<a href="https://github.com/pablosproject" style="color: #000;"><i class="fab fa-github" style="color: #000;"></i> GitHub</a> ·
+<a href="https://www.linkedin.com/in/paolo-tagliani/" style="color: #000;"><i class="fab fa-linkedin" style="color: #000;"></i> LinkedIn</a> ·
+<a href="https://twitter.com/pablosproject" style="color: #000;"><i class="fab fa-twitter" style="color: #000;"></i> Twitter</a>
 </p>
