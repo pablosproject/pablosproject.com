@@ -6,20 +6,20 @@ draft: false
 
 # About Me
 
-I am a Senior Software Engineer with strong theoretical skills and a passion for Open Source software.
+I'm a Software Engineer who enjoys solving complex problems across the stack.
 
-<br/>
+Good engineering principles transfer across domains. I've seen it firsthand, working on mobile apps, backend systems, hardware appliances, and everything in between.
 
-I worked for 10+ years as an iOS developer (and I still do mobile apps). Nowadays I am doing a bunch of stuff, mainly FullStack (NestJS + Angular is my preferred stack) Linux programming and automations.
+Currently I work primarily with TypeScript and Node.js, with React on the frontend when needed. But I care more about the problem than the tool.
 
-<br/>
+I work with companies of all sizes—startups, scaleups, and established organizations.
 
-In 2013, with some colleagues, we started [PragmaMark](https://pragmamark.org/it/association/), the first iOS and MacOS developer community in Italy.
-In 2015 we started organizing [PragmaConference](https://pragmaconference.com/),
-We organized several conferences on iOS and MacOS in Italy.
+<br/><br/><br/>
 
-<br/>
+---
 
-Today I'm working with startups and always looking for new challenges.
-
-You can find me on the internet as `@pablosproject`.
+<p style="text-align: center;">
+<a href="https://github.com/pablosproject"><i class="fab fa-github"></i> GitHub</a> ·
+<a href="https://www.linkedin.com/in/paolo-tagliani/"><i class="fab fa-linkedin"></i> LinkedIn</a> ·
+<a href="https://twitter.com/pablosproject"><i class="fab fa-twitter"></i> Twitter</a>
+</p>

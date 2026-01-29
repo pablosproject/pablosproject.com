@@ -30,9 +30,6 @@ googleAnalytics = ""  # add your tracking id
     name = "Works"
     url = "/works"
     weight = 3
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact"
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files
