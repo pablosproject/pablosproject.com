@@ -8,6 +8,8 @@ Oggi mi è successa una cosa un po' strana. Vengo contattato da un recruiter su 
 
 Arriva il solito link calendly, e mi arriva subito dopo un'email con un piccolo progetto da valutare e discutere insieme nella prima interview.
 
+⚠️ **Disclaimer: nello screenshot è visibile il link al repository. Non apritelo e non eseguite il codice in nessun caso. Contiene malware. Non mi assumo alcuna responsabilità per eventuali danni.**
+
 ![L'email del finto recruiter](/images/blog/2026-03-31-phishing-recruiter/email.png)
 
 A prima vista mi sembra strano, di solito la prima interview è conoscitiva, ma penso che magari sono un team piccolo e vogliono andare veloci, quindi non mi faccio domande e mi riprometto di guardarlo prima del meeting.
