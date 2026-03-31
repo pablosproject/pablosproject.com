@@ -2,6 +2,10 @@
 
 Based on [Hugo Researcher](https://github.com/ojroques/hugo-researcher) which in turn is based on the Jekyll theme [Researcher](https://github.com/ankitsultana/researcher).
 
+## Analytics
+
+[Pirsch Dashboard](https://dashboard.pirsch.io/?domain=pablosproject.com&interval=7d)
+
 ## Useful command
 
 - **Serve**: `hugo server -D` (-D for drafts)
