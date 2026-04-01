@@ -4,7 +4,7 @@ date: 2026-03-31
 draft: false
 ---
 
-Oggi mi è successa una cosa un po' strana. Vengo contattato da un recruiter su LinkedIn per una posizione US Full Stack Dev. Non ho niente da perdere, quindi accetto e dò un'occhiata all'azienda: non mi entusiasma molto, ma ho in mente di cercare un altro lavoro nel 2026, quindi penso "usiamolo come palestra di allenamento".
+Oggi mi è successa una cosa un po' strana. Vengo contattato da un recruiter su LinkedIn per una posizione US Full Stack Dev. Non ho niente da perdere, quindi accetto e dò un'occhiata all'azienda: non mi entusiasma molto, ma penso "usiamolo come palestra di allenamento".
 
 Arriva il solito link calendly, e mi arriva subito dopo un'email con un piccolo progetto da valutare e discutere insieme nella prima interview.
 
