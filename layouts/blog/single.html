@@ -2,6 +2,19 @@
 <div class="container">
     <h1>{{ .Title }}</h1>
     <p style="color: #666; font-size: 0.9em;">{{ .Date.Format "2 January 2006" }}</p>
+
+    {{ if .IsTranslated }}
+      {{ range .Translations }}
+        <p style="font-size: 0.95em; margin-top: -0.5rem;">
+          {{ if eq $.Site.Language.Lang "en" }}
+            This post is also available in <a href="{{ .RelPermalink }}">Italian</a>.
+          {{ else if eq $.Site.Language.Lang "it" }}
+            Questo post è disponibile anche in <a href="{{ .RelPermalink }}">inglese</a>.
+          {{ end }}
+        </p>
+      {{ end }}
+    {{ end }}
+
     <hr>
     {{ .Content }}
 </div>

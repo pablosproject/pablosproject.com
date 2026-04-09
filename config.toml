@@ -7,6 +7,20 @@ enableEmoji = true
 math = false          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = ""  # add your tracking id
 
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+
+  [languages.it]
+    languageName = "Italiano"
+    languageCode = "it-it"
+    weight = 2
+
 [params]
   author = "Paolo Tagliani"
   favicon = "favicon.svg"  # path to favicon
