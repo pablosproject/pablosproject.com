@@ -35,8 +35,10 @@ hugo new posts/POST.md
 |------|---------|
 | `content/_index.md` | Homepage ("About Me") |
 | `content/works.md` | Portfolio of projects |
-| `content/contact.md` | Contact information |
-| `content/about.md` | Redirect to homepage |
+| `content/about.md` | Older About Me page / legacy content |
+| `content/blog/_index.md` | Blog landing page |
+| `content/blog/*.en.md` | Canonical English blog posts |
+| `content/blog/*.it.md` | Optional Italian translations |
 
 ### Key Configuration (config.toml)
 
@@ -57,3 +59,71 @@ The theme is a private fork managed as a git submodule. To modify styling:
 ## Static Assets
 
 Place images, favicons, and other static files in `/static/`. They will be served from the site root.
+
+## Multilingual Blog Conventions
+
+The blog supports **English** and **Italian**.
+
+### Language rules
+
+- **English is canonical and required** for every blog post.
+- Italian is optional and treated as a translation.
+- Do not create an Italian blog post without its English counterpart.
+
+### File naming
+
+Use Hugo language suffixes:
+
+```text
+content/blog/post-slug.en.md
+content/blog/post-slug.it.md
+```
+
+Example:
+
+```text
+content/blog/2026-03-31-phishing-recruiter.en.md
+content/blog/2026-03-31-phishing-recruiter.it.md
+```
+
+### URL behavior
+
+- English posts live at `/blog/...`
+- Italian translations live at `/it/blog/...`
+
+### Translation linking
+
+Translation links on blog posts are handled automatically in:
+- `layouts/blog/single.html`
+
+Do **not** hardcode “also available in Italian/English” links inside Markdown unless there is a specific reason.
+
+### Publishing workflow
+
+#### English only
+Create:
+
+```text
+content/blog/my-post.en.md
+```
+
+#### English + Italian
+Create:
+
+```text
+content/blog/my-post.en.md
+content/blog/my-post.it.md
+```
+
+#### Not allowed
+Do not create:
+
+```text
+content/blog/my-post.it.md
+```
+
+without:
+
+```text
+content/blog/my-post.en.md
+```

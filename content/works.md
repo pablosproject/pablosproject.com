@@ -30,7 +30,7 @@ I've done many projects during my career. In this page keep here an up to date l
 
 - [WiTouch Pro](https://apps.apple.com/us/app/witouch-pro/id1180046960)
 - [Forcatch](https://apps.apple.com/it/app/forcatch/id1372788996)
-- [Inxpect Security](<[https://apps.apple.com/it/app/inxpect-security/id1334620177](https://apps.apple.com/it/app/inxpect-security/id1334620177)>)
+- [Inxpect Security](https://apps.apple.com/it/app/inxpect-security/id1334620177)
 - Lines ([Art exibition](https://www.smdot.net/exhibitions/scrolling-among-pictures/), [Artwork](https://www.kooness.com/artworks/giovanni-fredi-japan-2020-01-photography))
 - Simon Scena ([Product](https://www.simonelectric.com/intl/control-systems/scena), [App](https://apps.apple.com/it/app/scena/id933166315#?platform=iphone), [BlogPost](https://mobilejazz.com/blog/how-we-made-remote-development-work-with-physical-devices/))
 - [Koko](https://apps.apple.com/us/app/koko-dating-flirt-chat-app/id855200334)
