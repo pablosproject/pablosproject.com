@@ -5,6 +5,18 @@
     <title>{{ .Title }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
     <meta name="author" content='{{ .Site.Params.author }}'>
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+        (() => {
+            const storageKey = "theme";
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const storedTheme = localStorage.getItem(storageKey);
+            const theme = storedTheme || (prefersDark ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+            document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#0f1115" : "#ffffff");
+        })();
+    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,4 +42,45 @@
     {{ if .Params.noindex -}}
     <meta name="robots" content="noindex">
     {{ end -}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const storageKey = "theme";
+            const root = document.documentElement;
+            const toggle = document.getElementById("theme-toggle");
+            const media = window.matchMedia("(prefers-color-scheme: dark)");
+            const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+            const getPreferredTheme = () => localStorage.getItem(storageKey) || (media.matches ? "dark" : "light");
+
+            const applyTheme = (theme, persist = false) => {
+                root.setAttribute("data-theme", theme);
+                if (persist) {
+                    localStorage.setItem(storageKey, theme);
+                }
+                if (themeColorMeta) {
+                    themeColorMeta.setAttribute("content", theme === "dark" ? "#0f1115" : "#ffffff");
+                }
+                if (toggle) {
+                    const nextTheme = theme === "dark" ? "light" : "dark";
+                    toggle.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
+                    toggle.setAttribute("title", `Switch to ${nextTheme} mode`);
+                    toggle.textContent = theme === "dark" ? "☀" : "☾";
+                }
+            };
+
+            applyTheme(getPreferredTheme());
+
+            toggle?.addEventListener("click", () => {
+                const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+                applyTheme(nextTheme, true);
+            });
+
+            media.addEventListener?.("change", (event) => {
+                if (!localStorage.getItem(storageKey)) {
+                    applyTheme(event.matches ? "dark" : "light");
+                }
+            });
+        });
+    </script>
 </head>
