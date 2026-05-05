@@ -24,6 +24,9 @@ defaultContentLanguageInSubdir = false
 [params]
   author = "Paolo Tagliani"
   favicon = "favicon.svg"  # path to favicon
+
+  [params.analytics]
+    cloudflareToken = "" # optional manual Cloudflare Web Analytics token; leave empty when using Cloudflare Pages automatic setup
   
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
