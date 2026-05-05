@@ -4,7 +4,31 @@ Based on [Hugo Researcher](https://github.com/ojroques/hugo-researcher) which in
 
 ## Analytics
 
-[Pirsch Dashboard](https://dashboard.pirsch.io/?domain=pablosproject.com&interval=7d)
+This site is prepared for **Cloudflare Web Analytics**.
+
+- **Cloudflare Pages automatic setup**: no code changes needed, enable it in **Workers & Pages → your project → Metrics → Enable**.
+- **Manual setup**: paste your token in `config.toml` under `params.analytics.cloudflareToken`.
+
+The theme will load the Cloudflare beacon only when `cloudflareToken` is set.
+
+## Cloudflare Pages migration
+
+Recommended Cloudflare Pages settings for this Hugo site:
+
+- **Production branch**: `main`
+- **Build command**: `hugo`
+- **Build output directory**: `public`
+- **Environment variable**: `HUGO_VERSION=0.161.1`
+
+Migration checklist:
+
+1. Create a **Pages** project from this GitHub repo in Cloudflare.
+2. Use the build settings above.
+3. Verify the generated `*.pages.dev` preview works.
+4. In **Workers & Pages → your project → Custom domains**, add `pablosproject.com`.
+5. Update DNS to Cloudflare when ready.
+6. Enable **Web Analytics** in the project **Metrics** tab.
+7. After traffic is serving correctly from Cloudflare, remove the Netlify site.
 
 ## Useful command
 

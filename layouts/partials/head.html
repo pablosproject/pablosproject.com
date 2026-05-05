@@ -34,9 +34,9 @@
 
     {{- if not hugo.IsServer -}}
         {{- partial "googleanalytics.html" . -}}
-        <script defer src="https://api.pirsch.io/pa.js"
-            id="pianjs"
-            data-code="5xSjoVdV4oMdnRbb3i0qydHImp2FDoue"></script>
+        {{- with .Site.Params.analytics.cloudflareToken -}}
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}"}'></script>
+        {{- end -}}
     {{- end -}}
 
     {{ if .Params.noindex -}}
