@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ $data := hugo.Data.projects }}
+{{ $style := .Params.projectStyle | default (.Site.Params.projectStyle | default "dossier") }}
+{{ $tpl := cond (eq $style "ledger") "projects/row.html" "projects/card.html" }}
+<div class="container projects">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}{{ . }}{{ end }}
+
+  {{ with $data.work }}
+    <h2 class="proj-section">Work</h2>
+    <div class="proj-list proj-list-{{ $style }}">
+      {{ range . }}{{ partial $tpl . }}{{ end }}
+    </div>
+  {{ end }}
+
+  {{ with $data.side }}
+    <h2 class="proj-section">Side</h2>
+    <div class="proj-list proj-list-{{ $style }}">
+      {{ range . }}{{ partial $tpl . }}{{ end }}
+    </div>
+  {{ end }}
+
+  {{ with $data.past }}
+    {{ with .works }}
+      <h2 class="proj-section">Past projects</h2>
+      {{ range . }}
+        <p class="past-group">{{ .group | safeHTML }}</p>
+        <div class="past-list">
+          {{ range .items }}
+            <div class="past-row">
+              <span>
+                {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+              </span>
+              {{ with .note }}<span class="note">{{ . }}</span>{{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

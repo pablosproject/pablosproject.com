@@ -1,0 +1,30 @@
+{{ $p := . }}
+  {{ $hasMark := or $p.logo $p.monogram }}
+  <div class="proj-card{{ if not $hasMark }} proj-card-no-logo{{ end }}">
+    {{ if $hasMark }}
+      <div class="proj-logo">
+        {{ with $p.logo }}
+          <img src="{{ . | relURL }}" alt="{{ $p.name }} logo" loading="lazy">
+        {{ else }}
+          <span class="monogram">{{ $p.monogram }}</span>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <div class="proj-head">
+      <span class="name">{{ $p.name }}</span>
+      {{ with $p.role }}<span class="role">{{ . }}</span>{{ end }}
+      {{ with $p.status }}
+        <span class="proj-status proj-status-{{ . }}">{{ title . }}</span>
+      {{ end }}
+    </div>
+
+    <div class="proj-body">
+      {{ with $p.summary }}<p>{{ . }}</p>{{ end }}
+      {{ with $p.links }}
+        <div class="proj-links">
+          {{ range . }}<a href="{{ .url }}" rel="noopener">{{ .text }} &nearr;</a>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>

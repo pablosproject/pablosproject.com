@@ -48,8 +48,8 @@ defaultContentLanguageInSubdir = false
     url = "/blog"
     weight = 2
   [[menu.main]]
-    name = "Works"
-    url = "/works"
+    name = "Projects"
+    url = "/projects"
     weight = 3
 
 [markup.goldmark.renderer]

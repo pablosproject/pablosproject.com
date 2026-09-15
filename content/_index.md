@@ -4,17 +4,7 @@ date: 2022-01-10T16:34:05+01:00
 draft: false
 ---
 
-# About Me
-
-I'm a Software Engineer who enjoys solving complex problems across the stack.
-
-Good engineering principles transfer across domains. I've seen it firsthand, working on mobile apps, backend systems, hardware appliances, and everything in between.
-
-Currently I work primarily with TypeScript and Node.js, with React on the frontend when needed. But I care more about the problem than the tool.
-
-I work with companies of all sizes—startups, scaleups, and established organizations.
-
-<br/><br/><br/>
+I’m a product-minded engineer. For more than a decade, I’ve been building digital products across backend systems, infrastructure, mobile, and hardware.
 
 ---
 
