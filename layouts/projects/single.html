@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $data := hugo.Data.projects }}
+{{ $data := .Site.Data.projects }}
 {{ $style := .Params.projectStyle | default (.Site.Params.projectStyle | default "dossier") }}
 {{ $tpl := cond (eq $style "ledger") "projects/row.html" "projects/card.html" }}
 <div class="container projects">
